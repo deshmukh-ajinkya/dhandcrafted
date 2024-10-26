@@ -3,10 +3,4 @@
   margin: 0;
   padding: 0;
 }
-body {
-  background-image: url("./assets/tecture.jpg"); /* Replace with your actual background image path */
-  background-size: cover; /* Makes sure the image covers the whole body */
-  background-position: center; /* Centers the background image */
-  background-repeat: repeat; /* Prevents the image from repeating */
-  height: 100%; /* Ensures the body takes up the full height of the viewport */
-}
+
