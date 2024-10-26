@@ -111,7 +111,6 @@ function App() {
               <div key={idx} className={`${gallery.className}-item`}>
                 <img src={item.src} alt={item.alt} />
                 <p className="contact-item">{item.title}</p>{" "}
-                {/* Added class for text styling */}
                 <p>{item.price}</p>
               </div>
             ))}
