@@ -1,8 +1,6 @@
-import "../dashboard/style.css";
-import Logo from "../../assets/logo.png";
-import Whatsapp from "../../assets/whatsapp.png";
 import Special1 from "../../assets/special-1.jpg";
 import Portrait from "../../assets/portrait.jpg";
+import "../dashboard/style.css";
 
 const galleries = [
   {
