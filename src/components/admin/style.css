@@ -1,0 +1,129 @@
+.admin-container {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.admin-title {
+  font-size: 2rem; /* Use rem for better scalability */
+  font-weight: 600;
+}
+
+.admin-content {
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+  gap: 12px;
+}
+
+.admin-box {
+  flex: 1 1 300px; /* Allow it to grow and shrink with a minimum width */
+  background-color: #ffffff;
+  border-radius: 12px;
+  align-content: center;
+  text-align: center;
+  min-height: 30vh; /* Ensure a minimum height */
+  padding: 16px; /* Add some padding */
+}
+
+.addIconImg {
+  width: 48px; /* Adjust to fit within the box */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.admin-input {
+  width: 100%;
+  padding: 12px; /* Add padding for a bigger input size */
+  margin-bottom: 12px; /* Add some spacing between inputs */
+  border: 1px solid #ccc; /* Optional: add a border for better visibility */
+  border-radius: 8px; /* Optional: rounded corners for a nicer look */
+  box-sizing: border-box; /* Ensure padding is included in the width */
+  font-size: 1rem; /* Use rem for better scalability */
+}
+
+.admin-button-container {
+  display: flex;
+  flex-wrap: wrap; /* Allow buttons to wrap on smaller screens */
+  gap: 12px;
+}
+
+.admin-button {
+  flex: 1 1 100px; /* Allow it to grow and shrink with a minimum width */
+  padding: 12px;
+  border-radius: 24px;
+  text-align: center;
+  cursor: pointer; /* Add a pointer cursor for better UX */
+}
+
+.add-button {
+  background-color: #5ddd5d;
+  color: #ffffff;
+}
+
+.update-button {
+  background-color: #ffdb36;
+  color: #ffffff;
+}
+
+.delete-button {
+  background-color: #ff7272;
+  color: #ffffff;
+}
+
+/* Add active and hover effects */
+.admin-button:active {
+  transform: scale(0.95); /* Scale down the button when clicked */
+  transition: transform 0.1s ease; /* Smooth transition for the scaling effect */
+}
+
+.admin-button:hover {
+  filter: brightness(90%); /* Darken the button slightly on hover */
+}
+
+/* Image container using CSS Grid */
+.image-container {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(300px, 1fr)
+  ); /* Create a responsive grid */
+  gap: 12px; /* Add space between images */
+}
+
+.image-box {
+  border-radius: 8px;
+  padding: 36px;
+  border: 1px solid #d9d9d9;
+  background-color: #ffffff;
+  text-align: center;
+  box-sizing: border-box; /* Ensure padding is included in the width */
+  height: 300px; /* Set a fixed height for equal boxes */
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center align items */
+  justify-content: center; /* Center vertically */
+  overflow: hidden; /* Hide overflow to maintain the box shape */
+}
+
+.image-box img {
+  padding: 24px;
+  width: 100%; /* Ensure the image takes full width of the box */
+  height: 100%; /* Set height to 100% to fill the box */
+  object-fit: contain; /* Cover the box without distortion */
+}
+
+.image-title {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.image-price {
+  font-size: 16px;
+}
+
+/* Media Queries for further responsiveness */
+@media (max-width: 768px) {
+  .image-box {
+    width: calc(100% - 6px); /* Full width images on small screens */
+  }
+}
